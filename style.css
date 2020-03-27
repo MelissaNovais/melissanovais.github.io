@@ -1,0 +1,129 @@
+
+.grid{
+	display: flex;
+	height: 80vh;
+	padding: 4rem 10%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+@media (max-width: 650px) {
+	.grid{
+		flex-direction: column-reverse;
+	}
+}
+
+.text{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.text__title{
+	text-align: left;
+	font-size: 4.2rem;
+	width: 50%;
+	font-weight: 700;
+}
+
+.text__title--primary{
+	color: #6C63FF;
+}
+
+.text__icons{
+	display: flex;
+	justify-content: flex-start;
+	margin: 2rem 0;
+}
+
+.text__icons__icon{
+	width: 3rem;
+	height: 3rem;
+	margin-right: 1rem;
+	color: #FFE663;
+}	
+
+.svg-holder{
+	width: 50%;
+	animation: shrink 14s infinite forwards;
+	background-image: url(svgs/undraw_fitting_piece.svg);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 60%;
+	height: 60%;
+}
+
+
+@keyframes shrink {
+
+	0%{
+		transform: rotate(360deg) scale(.05);
+		background-image: url(svgs/undraw_fitting_piece.svg);
+	}	
+
+	5%{
+		transform: rotate(0) scale(1);
+	}
+
+	20%{
+		transform: rotate(0) scale(1);
+	}
+
+	25%{
+		transform: rotate(360deg) scale(.05);
+		background-image: url(svgs/undraw_fitting_piece.svg);
+	}
+
+	26%{
+		background-image: url(svgs/undraw_progressive.svg);
+	}
+
+	30%{
+		transform: rotate(0) scale(1);
+	}
+
+	45%{
+		transform: rotate(0) scale(1);
+	}
+
+	50%{
+		transform: rotate(360deg) scale(.05);
+		background-image: url(svgs/undraw_progressive.svg);
+	}
+
+	51%{
+		background-image: url(svgs/undraw_in_progress.svg);
+	}
+
+	55%{
+		transform: rotate(0) scale(1);
+	}
+
+	70%{
+		transform: rotate(0) scale(1);
+	}
+
+	75%{
+		transform: rotate(360deg) scale(.05);
+		background-image: url(svgs/undraw_in_progress.svg);
+	}
+
+	76%{
+		background-image: url(svgs/undraw_code_typing_.svg);
+	}
+
+	80%{
+		transform: rotate(0) scale(1);
+	}
+
+	95%{
+		transform: rotate(0) scale(1);
+	}
+
+	100%{
+		transform: rotate(360deg) scale(.05);
+		background-image: url(svgs/undraw_code_typing_.svg);
+	}
+}
